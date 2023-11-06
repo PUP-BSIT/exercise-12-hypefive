@@ -34,21 +34,21 @@ function submitComment(event) {
     nameHeading.className = "name";
     nameHeading.textContent = name;
 
-    const usernamePara = document.createElement("p");
-    usernamePara.className = "username";
-    usernamePara.textContent = "@" + name.toLowerCase().replace(/\s/g, "");
+    const usernameP = document.createElement("p");
+    usernameP.className = "username";
+    usernameP.textContent = "@" + name.toLowerCase().replace(/\s/g, "");
 
-    const userCommentPara = document.createElement("p");
-    userCommentPara.className = "userComment";
-    userCommentPara.textContent = commentText;
+    const userCommentP = document.createElement("p");
+    userCommentP.className = "userComment";
+    userCommentP.textContent = commentText;
 
     // Construct the comment structure
     nameInfo.appendChild(nameHeading);
-    nameInfo.appendChild(usernamePara);
+    nameInfo.appendChild(usernameP);
     userInfo.appendChild(userImage);
     userInfo.appendChild(nameInfo);
     newComment.appendChild(userInfo);
-    newComment.appendChild(userCommentPara);
+    newComment.appendChild(userCommentP);
 
     // Append the new comment to the comment container
     const commentContainer = document.querySelector(".usercommentcontainer");
