@@ -212,6 +212,7 @@ header nav ul li a {
   text-decoration: none;
   color: white;
 }
+
 .testimonials-section {
   text-align: center;
   margin-top: 20px;
@@ -387,6 +388,7 @@ header nav ul li a {
   font-size: 25px;
   margin-bottom: 20px;
 }
+
 .comment-form label {
   display: block;
   text-align: left;
@@ -421,21 +423,28 @@ header nav ul li a {
   background-color: #ccc;
 }
 
-.usercommentcontainer {
+.user-comment-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
-  height: 900px;
+  margin: 0;
+  width: 100%;
+  height: 1000px;
   background-color: #dae4e8;
+  overflow-y: auto;
 }
 
-.usercommentcontainer h1 {
+.user-comment-container h1 {
   font-family: "orchid", "times new roman";
   color: #4c6069;
   font-size: 50px;
-  margin-top: 50px;
   margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #dae4e8;
+  width: 100%;
+  height: 100px;
+  padding: 30px;
 }
 
 .comment {
@@ -450,6 +459,7 @@ header nav ul li a {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .comment .user-info {
