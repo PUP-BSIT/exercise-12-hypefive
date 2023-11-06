@@ -29,10 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (comName && comText) {
             const listItem = document.createElement("p");
-            listItem.innerHTML = `${comName} - ${comText}`;
+            listItem.innerHTML = `${comName} - ${comText}
+                <button class="delete-button">Delete</button>`;
             dataList.prepend(listItem);
             commenterName.value = "";
             commenterText.value = "";
+
+            listItem.querySelector(".delete-button").addEventListener
+                ("click", function () {
+                    listItem.remove();
+                });
         }
     });
 });
