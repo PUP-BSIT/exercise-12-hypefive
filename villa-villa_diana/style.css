@@ -41,7 +41,6 @@
   clear: both;
 }
 
-/*Interest and Hobbies Section*/
 .container h2 {
   text-align: center;
   font-family: Helvetica;
@@ -108,7 +107,6 @@
   color: #d9855d;
 }
 
-/*Works Section*/
 .row {
   background-color: #fff0e9;
 }
@@ -241,7 +239,6 @@
   background-color: #f9cc9f;
 }
 
-/*Testimonials Section*/
 .testimonials {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -319,7 +316,6 @@
   font-size: 17px;
 }
 
-/*Gallery Section*/
 .gallery-title h2 {
   padding: 80px 0px 0px;
   text-align: center;
@@ -355,7 +351,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/*Goals*/
 .goals {
   display: grid;
   grid-template-areas:
@@ -415,7 +410,6 @@
   transform: scale(1.05);
 }
 
-/*Comment Box*/
 .comment-section {
   width: 80%;
   margin: 50px auto;
@@ -505,15 +499,16 @@
   margin: 80px;
 }
 
-/*hayst*/
 @media (max-width: 425px) {
-    .testimonials li p {
-        transform: translatex(-50%);
-        font-size: 10px;
-      }
-      .testimonials li{
-        width: 100%;
-      }
+  .testimonials li p {
+    transform: translatex(-50%);
+    font-size: 10px;
+  }
+
+  .testimonials li {
+    width: 100%;
+  }
+
   .goals {
     grid-template-areas:
       "title"
@@ -541,46 +536,47 @@
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-    .testimonials li p {
-        transform: translatex(-50%);
-        font-size: 16px;
-      }
-      .testimonials li{
-        width: 40%;
-      }
-    .card-container {
-        flex-direction: column;
-    }
+  .testimonials li p {
+    transform: translatex(-50%);
+    font-size: 16px;
+  }
 
-    .card {
-        max-width: 100%;
-    }
+  .testimonials li {
+    width: 40%;
+  }
 
-    .gallery-item {
-        width: calc(50% - 20px); 
-    }
-    .goals {
-        grid-template-areas:
-          "title title"
-          "g1 g2"
-          "g3 g4";
-        padding: 40px;
-      }
-    
-      .goal1,
-      .goal2,
-      .goal3,
-      .goal4 {
-        margin: 20px;
-        padding: 20px;
-        border: solid 4px #c99996;
-        border-radius: 12px;
-        background-color: #977372;
-        color: #ede2dc;
-        text-align: center;
-        font-size: 16px;
-        transition: ease-in-out 0.3s;
-      }
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .gallery-item {
+    width: calc(50% - 20px);
+  }
+
+  .goals {
+    grid-template-areas:
+      "title title"
+      "g1 g2"
+      "g3 g4";
+    padding: 40px;
+  }
+
+  .goal1,
+  .goal2,
+  .goal3,
+  .goal4 {
+    margin: 20px;
+    padding: 20px;
+    border: solid 4px #c99996;
+    border-radius: 12px;
+    background-color: #977372;
+    color: #ede2dc;
+    text-align: center;
+    font-size: 16px;
+    transition: ease-in-out 0.3s;
+  }
 }
-
-
