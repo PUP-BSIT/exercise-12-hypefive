@@ -15,4 +15,4 @@ Prepare to elevate the energy because this is HypeFive! Highlighting the members
 
 ## Netlify URL
 
-**[HypeFive]** (https://hypefive.netlify.app/)
+[HypeFive](https://hypefive.netlify.app/)
