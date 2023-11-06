@@ -448,6 +448,7 @@
 }
 
 .like-button {
+  margin: 5px;
   background-color: #b6bcd2;
   border: solid 2px #737785;
   border-radius: 5px;
