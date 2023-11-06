@@ -212,6 +212,7 @@ header nav ul li a {
   text-decoration: none;
   color: white;
 }
+
 .testimonials-section {
   text-align: center;
   margin-top: 20px;
@@ -387,6 +388,7 @@ header nav ul li a {
   font-size: 25px;
   margin-bottom: 20px;
 }
+
 .comment-form label {
   display: block;
   text-align: left;
@@ -421,7 +423,7 @@ header nav ul li a {
   background-color: #ccc;
 }
 
-.usercommentcontainer {
+.user-comment-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -432,7 +434,7 @@ header nav ul li a {
   overflow-y: auto;
 }
 
-.usercommentcontainer h1 {
+.user-comment-container h1 {
   font-family: "orchid", "times new roman";
   color: #4c6069;
   font-size: 50px;
@@ -440,9 +442,9 @@ header nav ul li a {
   position: sticky;
   top: 0;
   background-color: #dae4e8;
-  width: 100%; /* Occupy full width of the container */
+  width: 100%;
   height: 100px;
-  padding: 30px; /* Add padding to maintain space around the text */
+  padding: 30px;
 }
 
 .comment {

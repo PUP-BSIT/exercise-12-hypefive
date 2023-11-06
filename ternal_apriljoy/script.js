@@ -17,28 +17,28 @@ function submitComment(event) {
 
   if (name && commentText) {
     // Create new elements for a new comment
-    const newComment = document.createElement("div");
-    newComment.className = "comment";
-
-    const userInfo = document.createElement("div");
-    userInfo.className = "user-info";
-
-    const userImage = document.createElement("img");
-    userImage.src = "image/defaultprofile.png"; // Replace with the user's image
-    userImage.alt = "User Image";
-
-    const nameInfo = document.createElement("div");
+    let nameInfo = document.createElement("div");
     nameInfo.className = "name-info";
 
-    const nameHeading = document.createElement("h3");
+    let userInfo = document.createElement("div");
+    userInfo.className = "user-info";
+
+    let newComment = document.createElement("div");
+    newComment.className = "comment";
+
+    let userImage = document.createElement("img");
+    userImage.src = "images/defaultprofile.png"; // Replace with the user's image
+    userImage.alt = "User Image";
+
+    let nameHeading = document.createElement("h3");
     nameHeading.className = "name";
     nameHeading.textContent = name;
 
-    const usernameP = document.createElement("p");
+    let usernameP = document.createElement("p");
     usernameP.className = "username";
     usernameP.textContent = "@" + name.toLowerCase().replace(/\s/g, "");
 
-    const userCommentP = document.createElement("p");
+    let userCommentP = document.createElement("p");
     userCommentP.className = "userComment";
     userCommentP.textContent = commentText;
 
@@ -51,7 +51,7 @@ function submitComment(event) {
     newComment.appendChild(userCommentP);
 
     // Append the new comment to the comment container
-    const commentContainer = document.querySelector(".usercommentcontainer");
+    const commentContainer = document.querySelector(".user-comment-container");
     commentContainer.appendChild(newComment);
     newComment.scrollIntoView({ behavior: "smooth", block: "start" });
 
