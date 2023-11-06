@@ -15,3 +15,24 @@ function validateForm() {
         commentButton.disabled = true;
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const commentButton = document.getElementById("comment_button");
+    const dataList = document.getElementById("data_list");
+
+    commentButton.addEventListener("click", function () {
+        const commenterName = document.getElementById("commenter_name");
+        const commenterText = document.getElementById("comment_text");
+
+        const comName = commenterName.value;
+        const comText = commenterText.value;
+
+        if (comName && comText) {
+            const listItem = document.createElement("p");
+            listItem.innerHTML = `${comName} - ${comText}`;
+            dataList.prepend(listItem);
+            commenterName.value = "";
+            commenterText.value = "";
+        }
+    });
+});
