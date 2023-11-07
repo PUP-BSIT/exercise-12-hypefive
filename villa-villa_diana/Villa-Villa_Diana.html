@@ -3,7 +3,6 @@
   <head>
     <link href="style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Number1-->
     <title>Villa-Villa Diana Page</title>
   </head>
   <body style="margin: 0px">
@@ -17,7 +16,6 @@
       </div>
     </div>
 
-    <!--Number 2-->
     <div class="container">
       <h2>My interests and hobbies</h2>
       <div class="decor-block"><!--Block Design--></div>
@@ -99,7 +97,6 @@
       </div>
     </div>
 
-    <!--Number 3-->
     <div class="row">
       <h1>Latest Crochet Project</h1>
       <div class="left-col">
@@ -109,7 +106,7 @@
         <h2>Duck Keychain</h2>
         <h3>Pattern by: Xuxu Crochet on YouTube</h3>
         <h3>Yarn Color: White, Black, Yellow, Green (Optional)</h3>
-        <a href="duck_work1.html"
+        <a href="#"
           ><button class="btn"><b>View Project</b></button></a
         >
       </div>
@@ -124,7 +121,7 @@
             <img src="images/tulip.png" />
             <div class="card-content">
               <h3 class="card-title">Tulip</h3>
-              <a href="tulip_work2.html"
+              <a href="#"
                 ><button class="btn-work-cont"><b>View Project</b></button></a
               >
             </div>
@@ -133,7 +130,7 @@
             <img src="images/rose.png" />
             <div class="card-content">
               <h3 class="card-title">Rose</h3>
-              <a href="rose_work3.html"
+              <a href="#"
                 ><button class="btn-work-cont"><b>View Project</b></button></a
               >
             </div>
@@ -142,7 +139,7 @@
             <img src="images/penguin.png" />
             <div class="card-content">
               <h3 class="card-title">Penguin</h3>
-              <a href="penguin_work4.html"
+              <a href="#"
                 ><button class="btn-work-cont"><b>View Project</b></button></a
               >
             </div>
@@ -151,7 +148,7 @@
             <img src="images/klee_dodoco.png" />
             <div class="card-content">
               <h3 class="card-title">Klee Dodoco</h3>
-              <a href="klee_dodoco_work5.html"
+              <a href="#"
                 ><button class="btn-work-cont"><b>View Project</b></button></a
               >
             </div>
@@ -160,7 +157,6 @@
       </div>
     </div>
 
-    <!--Number 4-->
     <div class="testimonials">
       <h2>Testimonials</h2>
       <ul>
@@ -200,7 +196,6 @@
       </ul>
     </div>
 
-    <!--Number 5-->
     <div class="gallery-title">
       <h2>Gallery</h2>
     </div>
@@ -237,8 +232,7 @@
         <img src="images/gallery_img6.png" alt="Small rose crochet" />
       </div>
     </div>
-
-    <!--Goals-->
+    
     <div class="goals">
       <div class="my-goals">
         <h2>My Goals</h2>
@@ -257,7 +251,6 @@
       </div>
     </div>
 
-    <!--Comments-->
     <div class="comment-section">
       <h1>Comments</h1>
       <div class="comment">
@@ -305,6 +298,9 @@
           <button class="reply-button">Reply</button>
         </div>
       </div>
+      <div id = "new_comment_container">
+        
+      </div>
 
       <form>
         <label class="form-label">Add a comment</label><br />
@@ -327,6 +323,7 @@
           id="comment_btn"
           disabled="true"
           class="btn-comment"
+          onclick="addComment()"
         >
           Comment
         </button>
