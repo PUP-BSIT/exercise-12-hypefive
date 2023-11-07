@@ -36,9 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
             commenterText.value = "";
 
             listItem.querySelector(".delete-button").addEventListener
-                ("click", function () {
-                    listItem.remove();
-                });
+                ("click", function () {listItem.remove();});
         }
     });
 });
