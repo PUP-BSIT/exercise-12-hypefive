@@ -26,8 +26,9 @@ function submitComment(event) {
     let newComment = document.createElement("div");
     newComment.className = "comment";
 
+    // Replace with the default image
     let userImage = document.createElement("img");
-    userImage.src = "images/defaultprofile.png"; // Replace with the user's image
+    userImage.src = "images/defaultprofile.png";
     userImage.alt = "User Image";
 
     let nameHeading = document.createElement("h3");
