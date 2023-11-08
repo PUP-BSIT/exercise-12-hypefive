@@ -141,7 +141,9 @@ h4 {
    padding: 15px;
    width: 50%;
    margin: 0 auto;
+   margin-bottom: 20px;
 }
+
 
 .my-goals {
     grid-area: itm1;
@@ -170,13 +172,20 @@ h4 {
 }
 
 .comments {
+   line-height: 2.0;
    padding: 20px;
    background-color: #fcbcd7;
 }
 
 .comments label {
+   display: block;
+   margin-top: 20 px;
    margin-left: 30px;
    font-weight: bold;
+}
+
+.comments input{
+   margin-left: 30px;
 }
 
 .comments textarea {
@@ -184,10 +193,12 @@ h4 {
 }
 
 .comments button {
+  display: block;
   background-color: hotpink;
   color: white;
   cursor: pointer;
   margin-left: 30px;
+  margin-bottom: 20px;
 }
 
 h5 {
@@ -197,6 +208,7 @@ h5 {
    background-color: #ffeff2;
    padding: 10px;
    width: 50%;
+   margin-bottom: 20px;
    margin: 0 auto;
 }
 
@@ -204,8 +216,7 @@ h5 {
   background-color: #ffeff2;
   list-style: none;
   border: 1px solid black;
-  margin: 10px;
-  padding: 10px;
+  padding-left: 20px;
 }
 
 .comments li span {
