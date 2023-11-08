@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
     <title>Cainday Bradley Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <div>
@@ -42,16 +42,14 @@
           </p>
         </ul>
       </section>
-
       <section class="column works-section">
         <h2>My works</h2>
-        <li><a href="./mywork.html">My Work 1</a></li>
-        <li><a href="./mywork2.html">My Work 2</a></li>
-        <li><a href="./mywork3.html">My Work 3</a></li>
-        <li><a href="./mywork4.html">My Work 4</a></li>
-        <li><a href="./mywork5.html">My Work 5</a></li>
+        <li><a href="#">My Work 1</a></li>
+        <li><a href="#">My Work 2</a></li>
+        <li><a href="#">My Work 3</a></li>
+        <li><a href="#">My Work 4</a></li>
+        <li><a href="#">My Work 5</a></li>
       </section>
-
       <section class="column testimonials-section">
         <h3>Testimonials</h3>
         <p>
@@ -68,19 +66,18 @@
           group well-informed throughout the project."
         </p>
         <p>
-          April - "Working with Bradley was a pleasure; their dedication to our
+          April - "Working with Bradley was a pleasure; her dedication to our
           project and consistent communication ensured our team's success."
         </p>
       </section>
-
       <section class="column gallery-section">
         <h3>Gallery</h3>
-        <img src="me.png" style="width: 130px" />
-        <img src="me.png" style="width: 130px" />
-        <img src="me.png" style="width: 130px" />
-        <img src="me.png" style="width: 130px" />
-        <img src="me.png" style="width: 130px" />
-        <img src="me.png" style="width: 130px" />
+        <img src="me.png" />
+        <img src="me.png" />
+        <img src="me.png" />
+        <img src="me.png" />
+        <img src="me.png" />
+        <img src="me.png" />
       </section>
     </div>
 
@@ -92,7 +89,7 @@
           <p>I found my talent in playing online games.</p>
           <li>To have my own Dance Room</li>
           <p>
-            My ultimate dream is to have this where I can dance comfortably.
+            My dream is to have a room where I can dance comfortably.
           </p>
           <li>To Travel other countries</li>
           <p>For adventure and finding happiness.</p>
@@ -102,27 +99,17 @@
       </section>
       <section class="comments">
         <h4>Comments</h4>
-        <br /><br />
-        <form id="comment-form">
-          <label for="name">Full Name:</label>
-          <input id="name" type="text" />
-          <br /><br />
-          <label for="comment">Comments:</label>
-          <br />
-          <textarea id="comment" name="comment" rows="7" cols="50"> </textarea>
-          <br /><br />
-          <button id="comment-button" type="button">
-            Comment
-          </button>
-          <p>
-            April -"Seeing your commitment to your goals is a reminder that hard
-            work and perseverance pay off. You're setting a fantastic example
-            for the team!
-          </p>
-          <p>comment 2</p>
-          <p>comment 3</p>
-          <p>comment 4</p>
+        <form id="comment_form">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" 
+        name="full_name" required pattern="[A-Za-z0-9 ]+">
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" 
+        rows="5" cols="55" required></textarea>
+        <button type="submit" id="submit">Comment</button>
         </form>
+        <h5>Comment List</h5>
+        <ul id="comment_list"></ul>
         <script src="script.js"></script>
       </section>
     </div>

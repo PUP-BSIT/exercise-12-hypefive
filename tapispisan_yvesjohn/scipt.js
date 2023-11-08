@@ -26,7 +26,7 @@ function addComment() {
     let addComment = commentInput.value.trim();
 
     if (addName && addComment){
-        let commentItem = document.createElement("li");
+        let commentItem = document.createElement("p");
         commentItem.innerHTML = `${addName} - ${addComment}`;
         commentList.appendChild(commentItem);
 
