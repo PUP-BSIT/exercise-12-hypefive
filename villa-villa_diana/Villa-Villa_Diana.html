@@ -232,7 +232,7 @@
         <img src="images/gallery_img6.png" alt="Small rose crochet" />
       </div>
     </div>
-    
+
     <div class="goals">
       <div class="my-goals">
         <h2>My Goals</h2>
@@ -298,26 +298,23 @@
           <button class="reply-button">Reply</button>
         </div>
       </div>
-      <div id = "new_comment_container">
-        
-      </div>
+      <div id="new_comment_container"></div>
 
       <form>
-        <label class="form-label">Add a comment</label><br />
+        <label class="form-label">Add a comment</label>
         <input
           type="text"
           id="name"
           placeholder="Name"
           oninput="newComment()"
           class="name-box"
-        /><br />
-        <input
-          type="textarea"
+        />
+        <textarea
           id="user_comment"
           placeholder="Add Comment"
           oninput="newComment()"
           class="comment-box"
-        /><br />
+        ></textarea>
         <button
           type="button"
           id="comment_btn"
