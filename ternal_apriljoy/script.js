@@ -10,13 +10,12 @@ function onInput() {
 }
 
 function submitComment(event) {
-  event.preventDefault(); // Prevents the default form submission behavior
+  event.preventDefault();
 
   const name = document.getElementById("name").value;
   const commentText = document.getElementById("comment").value;
 
   if (name && commentText) {
-    // Create new elements for a new comment
     let nameInfo = document.createElement("div");
     nameInfo.className = "name-info";
 
@@ -26,7 +25,6 @@ function submitComment(event) {
     let newComment = document.createElement("div");
     newComment.className = "comment";
 
-    // Replace with the default image
     let userImage = document.createElement("img");
     userImage.src = "images/defaultprofile.png";
     userImage.alt = "User Image";
